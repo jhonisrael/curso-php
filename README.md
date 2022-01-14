@@ -1,0 +1,1 @@
+# Todos os códigos praticado no curso PHP
