@@ -20,32 +20,32 @@
                 <h3>4. Controle </h3>
                 <ul>
                     <li>
-                        <a href="exercicio.php?dir=controle&file=if_else">
+                        <a href="exercicio.php?dir=controle1&file=if_else">
                             If Else
                         </a>
                     </li>
                     <li>
-                        <a href="exercicio.php?dir=controle&file=operadores_relacionais">
+                        <a href="exercicio.php?dir=controle1&file=operadores_relacionais">
                             Operadores relacionais
                         </a>
                     </li>
                     <li>
-                        <a href="exercicio.php?dir=controle&file=desafio_pi">
+                        <a href="exercicio.php?dir=controle1&file=desafio_pi">
                             Desafio PI
                         </a>
                     </li>
                     <li>
-                        <a href="exercicio.php?dir=controle&file=operadores_logicos">
+                        <a href="exercicio.php?dir=controle1&file=operadores_logicos">
                             Operadores Lógicos
                         </a>
                     </li>
                     <li>
-                        <a href="exercicio.php?dir=controle&file=desafio_operadores_logicos">
+                        <a href="exercicio.php?dir=controle1&file=desafio_operadores_logicos">
                             Desafio op. lógicos
                         </a>
                     </li>
                     <li>
-                        <a href="exercicio.php?dir=controle&file=operador_ternario">
+                        <a href="exercicio.php?dir=controle1&file=operador_ternario">
                             Operador Ternário
                         </a>
                     </li>

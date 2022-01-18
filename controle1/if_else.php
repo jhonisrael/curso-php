@@ -25,7 +25,7 @@ if(false) {
     echo "Passo E <br>";
 } else if (false){
     echo "Passo E <br>";
-else {
+} else {
     echo " Ultimo Passo <br>";
 } 
 
