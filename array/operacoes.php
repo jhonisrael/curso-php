@@ -29,7 +29,7 @@ print_r($dadosCompletos);
 
 unset($dadosCompletos);
 echo '<br>';
-var_dump($dadosCompletos); //var apagada
+//var_dump($dadosCompletos); //var apagada
 
 $impares = [1, 3, 5, 7, 9];
 $pares = [0, 2, 4, 6];
