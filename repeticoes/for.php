@@ -18,8 +18,14 @@ for(; $cont <= 15;) {
     $cont++;
 }
 
-$array = [1 => 'domingo', 'segunda', 'terça', 'quarta',
- 'quinta', 'sexta', 'sabado'];
+$array = [
+ 1 => 'domingo',
+ 'segunda',
+ 'terça',
+ 'quarta',
+ 'quinta',
+ 'sexta',
+ 'sabado'];
  
  print_r($array);
 
