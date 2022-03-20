@@ -2,19 +2,23 @@
 
 <?php
 
-function Palindromo($string){ 
-    if (strrev($string) == $string){ 
-        return 1; 
-    }
-    else{
-        return 0;
-    }
+function palindromo($palavra) {
+	$ultimoIndice = strlen($palavra) - 1;
+	for($i = 0; $i <= $ultimoIndice; $i++) {
+		if ($palavra[$i] !== $palavra[$ultimoIndice - $i]){
+			return 'Não';
+		}
+	}
+	return 'Sim';
 }
 
-$original = "Pai";
-if(Palindromo($original)){ 
-    echo "Palindromo"; 
-}
-else { 
-echo "Não é Palindromo"; 
-}
+	echo palindromo('arara') . '<br>';
+	echo palindromo('porco') . '<br>';
+
+
+ function PalindromoSimples($palavra) {
+ 	return $palavra === strrev($palavra) ? 'Sim': 'Não';
+ }
+ 
+ echo PalindromoSimples('arara') . '<br>';
+ echo PalindromoSimples('porco') . '<br>';
