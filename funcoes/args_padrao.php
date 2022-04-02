@@ -5,10 +5,10 @@ function saudacao($nome = 'Senhor(a)', $sobrenome = 'Cliente') {
 	echo "Bem vindo, $nome $sobrenome! <br>";
 }
 
-saudacao();
-saudacao(NULL);
-saudacao(null, NULL);
-saudacao('Mestre', 'Supremo');
+echo saudacao();
+echo saudacao(NULL);
+echo saudacao(null, NULL);
+echo saudacao('Mestre', 'Supremo');
 
 function anotarPedido($comida, $bebida = 'Agua') {
 	echo "Para comer: $comida <br>";

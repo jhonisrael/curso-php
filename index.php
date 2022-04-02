@@ -44,6 +44,16 @@
                             Argumentos Padrão
                         </a>
                     </li>
+                     <li>
+                        <a href="exercicio.php?dir=funcoes&file=usando_tipos">
+                            Usando Tipos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="exercicio.php?dir=funcoes&file=anonimas">
+                            Funções anônimas
+                        </a>
+                    </li>
                 </ul>
             </div>
             <div class="modulo verde-escuro">
