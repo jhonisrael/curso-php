@@ -16,6 +16,21 @@
     <main class="principal">
     <div class="conteudo">
         <nav class="modulos">
+            <div class="modulo azul-escuro">
+                <h3>7. paradigma O.O </h3>
+                <ul>
+                    <li>
+                        <a href="exercicio.php?dir=classe_objeto&file=classe">
+                            Primeira Classe
+                        </a>
+                    </li>
+                    <li>
+                        <a href="exercicio.php?dir=classe_objeto&file=desafio_data">
+                            Desafio Data
+                        </a>
+                    </li>
+                </ul>
+            </div>
             <div class="modulo vermelho-escuro">
                 <h3>7. Funções </h3>
                 <ul>
