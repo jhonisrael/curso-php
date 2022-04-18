@@ -29,6 +29,11 @@
                             Desafio Data
                         </a>
                     </li>
+                     <li>
+                        <a href="exercicio.php?dir=classe_objeto&file=construtor_destrutor">
+                            Construtor e Destrutor 
+                        </a>
+                    </li>
                 </ul>
             </div>
             <div class="modulo vermelho-escuro">
