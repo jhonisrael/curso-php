@@ -6,11 +6,11 @@
 <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
 <link href = "https: //fonts.googleapis.com/css2? family = Oswald: wght @ 200; 300; 400; 500; 600; 700 & display = swap "rel =" stylesheet ">
 <link rel="stylesheet" href="recursos/CSS/style.css">
-    <title>Curso php</title>
+    <title>PHP</title>
 </head>
 <body>
     <header class="cabeçalho">
-    <h1>Curso PHP</h1>
+    <h1>PHP</h1>
     <H2>Indice dos exercicios</H2>
     </header>
     <main class="principal">
@@ -142,6 +142,11 @@
                     <li>
                         <a href="exercicio.php?dir=repeticoes&file=desafio_tabela_2">
                            Desafio tabela #2
+                        </a>
+                    </li>
+                    <li>
+                        <a href="exercicio.php?dir=repeticoes&file=foreach-banco">
+                           Foreach-banco
                         </a>
                     </li>
                 </ul>

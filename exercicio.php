@@ -11,7 +11,7 @@
 </head>
 <body class="exercicio">
     <header class="cabeçalho">
-    <h1>Curso PHP</h1>
+    <h1>PHP</h1>
     <H2>visualizaçao do exercicio</H2>
     </header>
     <nav class= navegacao>
