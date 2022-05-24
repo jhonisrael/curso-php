@@ -11,13 +11,23 @@
 <body>
     <header class="cabeçalho">
     <h1>PHP</h1>
-    <H2>Indice dos exercicios</H2>
+    <H2>Exemplos</H2>
     </header>
     <main class="principal">
     <div class="conteudo">
         <nav class="modulos">
+            <div class="modulo roxo-escuro">
+                <h3>7. Testes</h3>
+                <ul>
+                    <li>
+                        <a href="exercicio.php?dir=Testes&file=teste">
+                            Teste
+                        </a>
+                    </li>
+                </ul>
+            </div>
             <div class="modulo azul-escuro">
-                <h3>7. paradigma O.O </h3>
+                <h3>7. Paradigma O.O </h3>
                 <ul>
                     <li>
                         <a href="exercicio.php?dir=classe_objeto&file=classe">
@@ -371,7 +381,7 @@
     </div>
     </main> 
     <footer class="rodape">
-        COD3R & ALUNOS <?= date('y'); ?>
+        COD3R & ALUNOS <?= date('y H:m:s'); ?>
     </footer>
 </body>
 </html>
