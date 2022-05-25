@@ -17,6 +17,16 @@
     <div class="conteudo">
         <nav class="modulos">
             <div class="modulo roxo-escuro">
+                <h3>7. Banco</h3>
+                <ul>
+                    <li>
+                        <a href="exercicio.php?dir=banco&file=conexao">
+                            Conexão Com o Banco MySql
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="modulo roxo-escuro">
                 <h3>7. Testes</h3>
                 <ul>
                     <li>
