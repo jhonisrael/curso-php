@@ -1,1 +1,1 @@
-# Template organizado e montado com PHP, HTML, CSS para armazenar atividades e todos os códigos praticado no curso PHP da COD3R
+# Template organizado e montado com PHP, HTML, CSS para armazenar atividades e todos os cÃ³digos do curso PHP da COD3R
