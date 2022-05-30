@@ -426,7 +426,7 @@
     </div>
     </main> 
     <footer class="rodape">
-        COD3R & ALUNOS <?= date('y H:m:s'); ?>
+     COD3R © <?= date("j. n. Y"); ?>
     </footer>
 </body>
 </html>
