@@ -27,7 +27,7 @@
     </div>
     </main>
     <footer class="rodape">
-      COD3R © <?= date("j. n. Y"); ?>
+      COD3R © <?= date("F j, Y"); ?>
     </footer>
 </body>
 </html>
