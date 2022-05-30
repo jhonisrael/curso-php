@@ -17,6 +17,36 @@
     <div class="conteudo">
         <nav class="modulos">
             <div class="modulo roxo-escuro">
+                <h3>7. Upload</h3>
+                <ul>
+                    <li>
+                        <a href="exercicio.php?dir=uploads&file=contador">
+                            Contador
+                        </a>
+                    </li>
+                    <li>
+                        <a href="exercicio.php?dir=uploads&file=GLPI-PCPA">
+                            glpi-pcpa
+                        </a>
+                    </li>
+                    <li>
+                        <a href="exercicio.php?dir=uploads&file=recebe_upload">
+                            recebe_upload
+                        </a>
+                    </li>
+                    <li>
+                        <a href="exercicio.php?dir=uploads&file=selectContador">
+                            select contador
+                        </a>
+                    </li>
+                    <li>
+                        <a href="exercicio.php?dir=uploads&file=uploads_pics">
+                            uploads pics
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="modulo roxo-escuro">
                 <h3>7. Banco</h3>
                 <ul>
                     <li>
