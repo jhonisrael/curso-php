@@ -8,7 +8,7 @@
     <title>Teste</title>
 </head>
 <body>
-    <h1>Crud do crud</h1>
+    <h1>Crud</h1>
     <form action="" method="POST">
      <div>
      <label for="example">Nome</label>
