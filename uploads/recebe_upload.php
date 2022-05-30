@@ -16,10 +16,10 @@
 
 </head>
 <body class="exercicio">
-    <header class="cabecalho">
+    <!-- <header class="cabecalho">
         <h1>PHP</h1>
         <h2>Vizualização (CODES)</h2>
-    </header>
+    </header> -->
         <nav class="navegacao">
             <a href="../uploads/uploads_pics.php" class="verde">Voltar Página</a>
             <a href="../php/index.php" class="vermelho">Voltar</a>
@@ -131,8 +131,8 @@
 
         </div>
     </main>
-    <footer class="rodape">
+    <!-- <footer class="rodape">
         CURSO & ALUNOS © <?= date("j. n. Y"); ?>
-    </footer>
+    </footer> -->
 </body>
 </html>

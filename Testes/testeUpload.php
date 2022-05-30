@@ -10,6 +10,13 @@ $tamanhoArquivo = $_FILES['imagem'] ['size'];
 
 //echo $nomeArquivo . '-->' . $tamanhoArquivo;
 
+//Uso de expressão regular
+$padraoNome = "/^[a-zA-Z0-9.\-\_\/\'\"\ ]{1,30}$/i";                            //   
+$padraoComment = "/^[a-zA-Z0-9.\-\_\/\'\"\ ]{1,150}$/i";                        //
+//$padraoNomeImage = "/^[a-zA-Z0-9.\-\_\:\ ]{1,50}\.(png|PNG|gif|JPG|jpeg|jpg)$/i";     //
+$padraoNomeImage = "/^[a-zA-Z0-9.\-\_\:\ ]{1,50}\.(PDF|pdf)$/i"; 
+//--------------------------------------------------------------
+
 $extensao = pathinfo($nomeArquivo, PATHINFO_EXTENSION);
 $extensao = strtolower($extensao);
 
