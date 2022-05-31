@@ -27,6 +27,10 @@ $sql = "select * from teste where nome = '$nome'";
 
 $resultado = mysqli_query($mysqli_connection, $sql);
 
+if ($nome == null) {
+    echo "Usuario vazio!";
+  } else {
+
 $sql = "INSERT INTO teste (nome) VALUE ('$nome')";
 if (mysqli_query($mysqli_connection, $sql)) {
     echo "enviado com sucesso!";
@@ -34,5 +38,5 @@ if (mysqli_query($mysqli_connection, $sql)) {
   echo "Error: " . mysqli_error($mysqli_connection);
 }
 mysqli_close($mysqli_connection);
-
+  }
 ?>
