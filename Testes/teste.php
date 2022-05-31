@@ -28,7 +28,7 @@ $sql = "select * from teste where nome = '$nome'";
 $resultado = mysqli_query($mysqli_connection, $sql);
 
 if ($nome == null) {
-    echo "Usuario vazio!";
+    echo "nome vazio!";
   } else {
 
 $sql = "INSERT INTO teste (nome) VALUE ('$nome')";
