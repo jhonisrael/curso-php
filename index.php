@@ -69,6 +69,11 @@
                             Upload
                         </a>
                     </li>
+                    <li>
+                        <a href="exercicio.php?dir=Testes&file=enquete_tempo">
+                            Enquete
+                        </a>
+                    </li>
                 </ul>
             </div>
             <div class="modulo azul-escuro">
