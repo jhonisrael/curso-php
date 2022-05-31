@@ -2,7 +2,7 @@
 
 <?php
 $numeroA = 13;
-echo $numeroA, '<br>';
+echo $numeroA . '<br>';
 var_dump ($numeroA);
 
 echo '<br>';
@@ -16,7 +16,7 @@ echo isset($somaDosNumeros);
 
 unset ($somaDosNumeros);
 echo '<br>';
-var_dump($somaDosNumeros);
+//var_dump($somaDosNumeros);
 
 $variavel = "agora sou uma string";
 echo '<br>' . $variavel;
