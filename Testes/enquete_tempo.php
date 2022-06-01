@@ -13,7 +13,6 @@
   }
   </style>
 </head>
-<h1>Cadastre-se:</h1>
 <body class="container p-5 my-5 bg-secondary text-white" >
 
 <?php
@@ -21,7 +20,7 @@ include './Testes/relogio.php';
 ?>
 
 <form action="/curso-php/exercicio.php?dir=Testes&file=enquete_tempo" method="POST">
-  <div class="form-group">
+  <div class="form-group"> <h1>pergunta 1</h1>
   <div class="form-check">
       <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">
       <label class="form-check-label" for="check1">Option 1</label>
@@ -39,8 +38,11 @@ include './Testes/relogio.php';
 </form>
 
 <?php
-if ($_POST['option2']) {
+if ($_POST['option2'] == true) {
     echo "Resposta correta!";
-} else {
+} 
+else {
     echo "Resposta errada!";
 }
+
+?>

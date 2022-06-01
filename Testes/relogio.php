@@ -24,8 +24,8 @@
 <div class="op22" id="timer"></div>
 
 <script>
-    
-    //  Reloio com h,m,s --------------------------
+
+//  Reloio com h,m,s --------------------------
 //     function currentTime() {
 //   var date = new Date(); /* creating object of Date class */
 //   var hour = date.getHours();
@@ -46,22 +46,23 @@
 //     return k;
 //   } 
 // }  
-// opção 1 -----------------
-// var deadline = new Date("Jun 1, 2022 10:00:00").getTime();
-// var x = setInterval(function() {
-// var now = new Date().getTime();
-// var t = deadline - now;
-// var days = Math.floor(t / (1000 * 60 * 60 * 24));
-// var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60));
-// var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
-// var seconds = Math.floor((t % (1000 * 60)) / 1000);
-// document.getElementById("demo").innerHTML = days + "d " 
-// + hours + "h " + minutes + "m " + seconds + "s ";
-//     if (t < 0) {
-//         clearInterval(x);
-//         document.getElementById("demo").innerHTML = "EXPIRED";
-//     }
-// }, 1000);
+
+/* opção 1 -----------------
+var deadline = new Date("Jun 1, 2022 10:00:00").getTime();
+var x = setInterval(function() {
+var now = new Date().getTime();
+var t = deadline - now;
+var days = Math.floor(t / (1000 * 60 * 60 * 24));
+var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60));
+var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+var seconds = Math.floor((t % (1000 * 60)) / 1000);
+document.getElementById("demo").innerHTML = days + "d " 
++ hours + "h " + minutes + "m " + seconds + "s ";
+    if (t < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+}, 1000); */
 
 //opção2-----------------------
 function startTimer(duration, display) {
@@ -78,7 +79,7 @@ function startTimer(duration, display) {
     }, 1000);
 }
 window.onload = function () {
-    var duration = 60 * 5; // Converter para segundos
+    var duration = 60 * 3; // Converter para segundos
         display = document.querySelector('#timer'); // selecionando o timer
     startTimer(duration, display); // iniciando o timer
 };
