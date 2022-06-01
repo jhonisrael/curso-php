@@ -16,6 +16,10 @@
 <h1>Cadastre-se:</h1>
 <body class="container p-5 my-5 bg-secondary text-white" >
 
+<?php
+include './Testes/relogio.php';
+?>
+
 <form action="/curso-php/exercicio.php?dir=Testes&file=enquete_tempo" method="POST">
   <div class="form-group">
   <div class="form-check">
@@ -27,8 +31,8 @@
       <label class="form-check-label" for="check2">Option 2</label>
     </div>
     <div class="form-check">
-      <input type="checkbox" class="form-check-input">
-      <label class="form-check-label">Option 3</label>
+      <input type="checkbox" class="form-check-input" id="check3" name="option3" value="something">
+      <label class="form-check-label" for="check3">Option 3</label>
     </div>
     <button type="submit" class="btn btn-primary mt-3">Submit</button>
   </div>

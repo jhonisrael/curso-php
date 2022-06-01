@@ -74,6 +74,11 @@
                             Enquete
                         </a>
                     </li>
+                    <li>
+                        <a href="exercicio.php?dir=Testes&file=relogio">
+                            Relógio
+                        </a>
+                    </li>
                 </ul>
             </div>
             <div class="modulo azul-escuro">
