@@ -4,7 +4,7 @@
 </HEAD>
 <BODY>
 <FONT SIZE="5">Qual a sua base de dados preferida?</FONT><BR>
-<FORM NAME="votação" ACTION="/curso-php/exercicio.php?dir=Testes&file=votacao" METHOD="REQUEST">
+<FORM NAME="votação" ACTION="/curso-php/exercicio.php?dir=Testes&file=votacao" METHOD="POST">
 <INPUT TYPE="radio" NAME="escolha" VALUE="1">MySQL<BR>
 <INPUT TYPE="radio" NAME="escolha" VALUE="2">msSQL<BR>
 <INPUT TYPE="radio" NAME="escolha" VALUE="3">PostgreSQL<BR>
@@ -17,7 +17,7 @@
 
 <?php
 
-if ($escolha != $_REQUEST['escolha']) { // Verifica se foi inserido um voto e prossegue em frente no caso de verdade
+if ($escolha = $_POST['escolha']) { // Verifica se foi inserido um voto e prossegue em frente no caso de verdade
 
 // Variáveis a serem alteradas
 
@@ -27,7 +27,7 @@ if ($escolha != $_REQUEST['escolha']) { // Verifica se foi inserido um voto e pr
 $mysql_dtbs = "votacao"; // base de dados onde a tabela foi criada
 
 $num_resp = ""; // número de opções na tua votação
-$pergunta = ""; // pergunta da votação
+$pergunta = "$escolha"; // pergunta da votação
 
 // Nada mais a ser alterado
 
@@ -36,11 +36,11 @@ $mysqli_connection = new MySQLi('localhost', 'root', '', 'votacao');
 if($mysqli_connection->connect_error){
    echo "Desconectado! Erro: " . $mysqli_connection->connect_error;
 }else{
-   echo "Conectado!";
+//    echo "Conectado!";
 }
 // ligação ao MySQL
 
-$radio = $num_resp + 1;
+$radio = '$num_resp + 1';
 // para uso posterior
 
 mysqli_select_db($mysqli_connection, $mysql_dtbs);
@@ -48,10 +48,16 @@ mysqli_select_db($mysqli_connection, $mysql_dtbs);
 
 // aqui começa todo o trabalho do PHP para actualizar a base de dados
 
-$query_upd = "SELECT * FROM votacao WHERE id=$escolha";
+
+//$query_upd = "SELECT * FROM votacao WHERE id=$escolha";
+$query_upd = sprintf("SELECT id, votos FROM votacao");
 $resul_upd = mysqli_query($mysqli_connection, $query_upd);
 // aqui o PHP selecciona apenas os registos que coincidem com a escolha, neste 
 // caso so uma opção
+$dados = mysqli_query($mysqli_connection,$query_upd);
+$linha = mysqli_fetch_assoc($dados);
+// calcula quantos dados retornaram
+$total = mysqli_num_rows($dados);
 
 $obj_upd = mysqli_fetch_object($resul_upd);
 // o comando mysql_fetch_object() separa os resultados de uma query por colunas
