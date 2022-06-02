@@ -82,6 +82,11 @@ error_reporting(0);
                             Relógio
                         </a>
                     </li>
+                    <li>
+                        <a href="exercicio.php?dir=Testes&file=votacao">
+                            Votação
+                        </a>
+                    </li>
                 </ul>
             </div>
             <div class="modulo azul-escuro">
