@@ -6,10 +6,10 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 <style>
-    table, tr, td {
+    /* table, tr, td {
         border: 1px solid royalblue;
         
-    }
+    } */
 </style>
 
 
@@ -56,34 +56,41 @@ $queryResultado = "select nome, email, texto FROM login";
 $resultado = mysqli_query($mysqli_connection, $queryResultado);
 ?>
 
-<table>
+<table class="table table-striped table-dark">
+<thead class="thead-dark">
 <tr>
-    <th>
+    <th scope="col">
         nome
     </th>
-    <th>
+    <th scope="col">
         email
     </th>
-    <th>
+    <th scope="col">
         texto
     </th>
 </tr>
+</thead>
+
 
 
 <?php 
 
 foreach ($resultado as $resultadoTela) {
+echo '<tbody>';
     echo '<tr>';
     echo '<td>';
     print_r($resultadoTela['nome']);
     echo '</td>';
+
     echo '<td>';
     print_r($resultadoTela['email']);
     echo '</td>';
+    
     echo '<td>';
     print_r($resultadoTela['texto']);
     echo '</td>';
-    echo '<tr>';
+    echo '</tr>';
+echo '</tbody>';
 }
 ?>
 </table>
