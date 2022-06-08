@@ -23,6 +23,16 @@ error_reporting(0);
                 <h3>7. Upload</h3>
                 <ul>
                     <li>
+                        <a href="exercicio.php?dir=pratica_select&file=login">
+                            Login com crud
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="modulo roxo-escuro">
+                <h3>7. Upload</h3>
+                <ul>
+                    <li>
                         <a href="exercicio.php?dir=uploads&file=contador">
                             Contador
                         </a>
