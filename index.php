@@ -23,7 +23,7 @@ error_reporting(0);
                 <h3>7. select-crud </h3>
                 <ul>
                     <li>
-                        <a href="exercicio.php?dir=pratica_select&file=login">
+                        <a href="exercicio.php?dir=select_crud&file=login">
                             Login com crud
                         </a>
                     </li>
