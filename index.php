@@ -20,7 +20,7 @@ error_reporting(0);
     <div class="conteudo">
         <nav class="modulos">
             <div class="modulo roxo-escuro">
-                <h3>7. Upload</h3>
+                <h3>7. select-crud </h3>
                 <ul>
                     <li>
                         <a href="exercicio.php?dir=pratica_select&file=login">
