@@ -117,6 +117,11 @@ error_reporting(0);
                             Construtor e Destrutor 
                         </a>
                     </li>
+                     <li>
+                        <a href="exercicio.php?dir=classe_objeto&file=heranca">
+                            Heranaça
+                        </a>
+                    </li>
                 </ul>
             </div>
             <div class="modulo vermelho-escuro">
