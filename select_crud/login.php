@@ -5,6 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+    table, tr, td {
+        border: 1px solid royalblue;
+        
+    }
+</style>
+
+
 </head>
 <body>
 <div class="container mt-3">
@@ -44,13 +52,43 @@ if (mysqli_query($mysqli_connection, $sql)) {
 }
 
 
-$queryResultado = "select * from login";
+$queryResultado = "select nome, email, texto FROM login";
 $resultado = mysqli_query($mysqli_connection, $queryResultado);
+?>
+
+<table>
+<tr>
+    <th>
+        nome
+    </th>
+    <th>
+        email
+    </th>
+    <th>
+        texto
+    </th>
+</tr>
+
+
+<?php 
 
 foreach ($resultado as $resultadoTela) {
-    print_r($resultadoTela['nome'].'<br>'. $resultadoTela['email']. '<br>'.$resultadoTela['texto'].'<br>');
+    echo '<tr>';
+    echo '<td>';
+    print_r($resultadoTela['nome']);
+    echo '</td>';
+    echo '<td>';
+    print_r($resultadoTela['email']);
+    echo '</td>';
+    echo '<td>';
+    print_r($resultadoTela['texto']);
+    echo '</td>';
+    echo '<tr>';
 }
+?>
+</table>
 
+<?php
 mysqli_close($mysqli_connection);
 
 //echo "Seja bem vindo $";
