@@ -6,10 +6,10 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 <style>
-    /* table, tr, td {
+     table, tr, td {
         border: 1px solid royalblue;
         
-    } */
+    } 
 </style>
 
 
@@ -43,16 +43,16 @@ $email = $_POST['email'];
 $texto = $_POST['texto'];
 
 
-$sql = "INSERT INTO login VALUES ('', '$nome', '$email', '$texto')";
+$sql = "INSERT INTO teste VALUES ('', '$nome', '$email', '$texto')";
 
 if (mysqli_query($mysqli_connection, $sql)) {
-    //echo "enviado com sucesso!";
+    // echo "enviado com sucesso!";
 } else {
   echo "Error: " . mysqli_error($mysqli_connection);
 }
 
 
-$queryResultado = "select nome, email, texto FROM login";
+$queryResultado = "select nome, email, texto FROM teste";
 $resultado = mysqli_query($mysqli_connection, $queryResultado);
 ?>
 
@@ -76,7 +76,7 @@ $resultado = mysqli_query($mysqli_connection, $queryResultado);
 <?php 
 
 foreach ($resultado as $resultadoTela) {
-echo '<tbody>';
+
     echo '<tr>';
     echo '<td>';
     print_r($resultadoTela['nome']);
@@ -90,7 +90,7 @@ echo '<tbody>';
     print_r($resultadoTela['texto']);
     echo '</td>';
     echo '</tr>';
-echo '</tbody>';
+
 }
 ?>
 </table>
