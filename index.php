@@ -126,9 +126,15 @@ error_reporting(0);
                         <a href="exercicio.php?dir=classe_objeto&file=visibilidade">
                             Visibilidade
                         </a>
-                    </li><li>
+                    </li>
+                    <li>
                         <a href="exercicio.php?dir=classe_objeto&file=static">
-                            Membros Estáticos
+                            Membros státicos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="exercicio.php?dir=classe_objeto&file=interface">
+                            Interface
                         </a>
                     </li>
                 </ul>
