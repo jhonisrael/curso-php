@@ -136,6 +136,10 @@ error_reporting(0);
                         <a href="exercicio.php?dir=classe_objeto&file=interface">
                             Interface
                         </a>
+                    </li>                    <li>
+                        <a href="exercicio.php?dir=classe_objeto&file=abstract">
+                            Abstract
+                        </a>
                     </li>
                 </ul>
             </div>
