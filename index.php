@@ -130,7 +130,7 @@ error_reporting(0);
                     <li>
                         <a href="exercicio.php?dir=classe_objeto&file=static">
                             Membros státicos
-                        </a>
+                        </a>                    
                     </li>
                     <li>
                         <a href="exercicio.php?dir=classe_objeto&file=interface">
@@ -145,9 +145,20 @@ error_reporting(0);
                         <a href="exercicio.php?dir=classe_objeto&file=desafio_erro">
                            Desafio Erro
                         </a>
-                    </li><li>
+                    </li>
+                    <li>
                         <a href="exercicio.php?dir=classe_objeto&file=final">
                            Modificador Final
+                        </a>
+                    </li>
+                    <li>
+                        <a href="exercicio.php?dir=classe_objeto&file=traits">
+                           Traits #01
+                        </a>
+                    </li>
+                    <li>
+                        <a href="exercicio.php?dir=classe_objeto&file=traits2">
+                           Traits #02
                         </a>
                     </li>
                 </ul>
