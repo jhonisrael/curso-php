@@ -136,9 +136,18 @@ error_reporting(0);
                         <a href="exercicio.php?dir=classe_objeto&file=interface">
                             Interface
                         </a>
-                    </li>                    <li>
+                    </li>                    
+                    <li>
                         <a href="exercicio.php?dir=classe_objeto&file=abstract">
                             Abstract
+                        </a>
+                    <li>
+                        <a href="exercicio.php?dir=classe_objeto&file=desafio_erro">
+                           Desafio Erro
+                        </a>
+                    </li><li>
+                        <a href="exercicio.php?dir=classe_objeto&file=final">
+                           Modificador Final
                         </a>
                     </li>
                 </ul>
