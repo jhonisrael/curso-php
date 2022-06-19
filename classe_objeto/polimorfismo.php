@@ -32,7 +32,7 @@ class Pessoa {
 		$this->peso += $comida->peso;
 	}
 }
-
+// ------------
 $c1 = new Arroz();
 $c1->peso = 0.75;
 
