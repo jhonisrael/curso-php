@@ -160,6 +160,15 @@ error_reporting(0);
                         <a href="exercicio.php?dir=classe_objeto&file=traits2">
                            Traits #02
                         </a>
+                    </li> 
+                    <li>
+                        <a href="exercicio.php?dir=classe_objeto&file=magic_methods">
+                           Métodos mágicos
+                        </a>
+                    </li><li>
+                        <a href="exercicio.php?dir=classe_objeto&file=polimorfismo">
+                           Polimorfismo
+                        </a>
                     </li>
                 </ul>
             </div>

@@ -16,8 +16,12 @@ trait validacaoMelhor {
 class Usuario {
 	use validacao, validacaoMelhor {
 		validacaoMelhor::validarString insteadOf validacao;
+        
+        validacao::validarString as validacaoSimples;
 	}
 }
 
 $usuario = new Usuario();
 var_dump($usuario->validarString(' '));
+echo '<br>';
+var_dump($usuario->validacaoSimples(' '));
