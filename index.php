@@ -100,7 +100,17 @@ error_reporting(0);
                 </ul>
             </div>
             <div class="modulo azul-escuro">
-                <h3>7. Paradigma O.O </h3>
+                <h3>9. Includes </h3>
+                <ul>
+                    <li>
+                        <a href="exercicio.php?dir=includes&file=include">
+                            Include
+                        </a>
+                    </li>
+                </ul>
+            </div>
+                    <div class="modulo azul-escuro">
+                <h3>8. Paradigma O.O </h3>
                 <ul>
                     <li>
                         <a href="exercicio.php?dir=classe_objeto&file=classe">
