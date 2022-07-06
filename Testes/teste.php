@@ -33,7 +33,7 @@ if ($nome == null) {
 
 $sql = "INSERT INTO teste (nome) VALUE ('$nome')";
 if (mysqli_query($mysqli_connection, $sql)) {
-    echo "enviado com sucesso!";
+    echo "enviado com sucesso! " . $nome;
 } else {
   echo "Error: " . mysqli_error($mysqli_connection);
 }

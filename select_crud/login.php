@@ -46,17 +46,17 @@ $texto = $_POST['texto'];
 $sql = "INSERT INTO teste VALUES ('', '$nome', '$email', '$texto')";
 
 if (mysqli_query($mysqli_connection, $sql)) {
-    // echo "enviado com sucesso!";
+    echo "enviado com sucesso!";
 } else {
   echo "Error: " . mysqli_error($mysqli_connection);
 }
 
 
-$queryResultado = "select nome, email, texto FROM teste";
-$resultado = mysqli_query($mysqli_connection, $queryResultado);
+// $queryResultado = "select nome, email, texto FROM teste";
+// $resultado = mysqli_query($mysqli_connection, $queryResultado);
 ?>
 
-<table class="table table-striped table-dark">
+<!-- <table class="table table-striped table-dark">
 <thead class="thead-dark">
 <tr>
     <th scope="col">
@@ -71,11 +71,22 @@ $resultado = mysqli_query($mysqli_connection, $queryResultado);
 </tr>
 </thead>
 
-
+ -->
 
 <?php 
 
-foreach ($resultado as $resultadoTela) {
+$sql =  "SELECT nome FROM teste WHERE nome = '$nome'";
+$rs = mysqli_query($mysqli_connection,$sql);
+    $numRows = mysqli_num_rows($rs);
+
+    if (mysqli_query($mysqli_connection,$sql)) {
+      echo "Seja bem vindo(a) " . $nome ;
+}
+else {
+      $error_message = "Erro de conexão";
+      sc_error_message($error_message);
+
+/*foreach ($resultado as $resultadoTela) {
 
     echo '<tr>';
     echo '<td>';
@@ -90,10 +101,10 @@ foreach ($resultado as $resultadoTela) {
     print_r($resultadoTela['texto']);
     echo '</td>';
     echo '</tr>';
-
+*/
 }
 ?>
-</table>
+<!-- </table> -->
 
 <?php
 mysqli_close($mysqli_connection);
