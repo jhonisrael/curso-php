@@ -4,7 +4,7 @@ $nome = [nome];
 
 $check_sql =  "SELECT nome FROM curriculum_dados_pessoais WHERE nome = '[nome]'";
 
-sc_select(rs, $check_sql;
+sc_select(rs, $check_sql);
 
 foreach ($rs as $resultadoTela) {
 
@@ -31,7 +31,7 @@ else {
 }
 mysqli_close($mysqli_connection);
 }
-  }
+  
 
 //teste para o lookup
 sc_lookup(dataset, "SELECT cod_curriculum_pk, nome, sobrenome from curriculum_dados_pessoas");
@@ -50,8 +50,8 @@ sc_lookup(dataset, "SELECT cod_curriculum_pk, nome, sobrenome from curriculum_da
 	}
 	.boaVinda {
 		text-align:r;
+		background-color: #eceaea;
 	}
-	background-color: #eceaea;
 </style>
 
 //exemlo 1
@@ -80,3 +80,18 @@ echo {nome[0]};
       sc_lookup(Dataset, $sql); 
      echo '.<p>bem vindo </p>.' . $name = {Dataset[0][0]};
 ?>  </div>
+
+<?php
+sc_select(minhas_vagas, "vag.cod_empresa_vagas_pk, vag.cod_tipo_contrato, vag.cod_cargo from tab_empresa_vagas");
+if ( {meus_dados} === false ) {
+  echo "Vaga inexistente";
+} else {
+  while ( !{meus_dados}->EOF ) {
+    {cod_tipo_contrato} = {meus_dados}->fields[1];
+    {cod_cargo} = {meus_dados}->fields[1];
+    {meus_dados}->MoveNext();
+  }
+
+  {meus_dados}->Close();
+}
+?>

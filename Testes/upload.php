@@ -1,8 +1,20 @@
-<div class="titulo">Upload PDF</div>
+<?php
+/* $a = 1;
+$b = 2;
+function soma() {
+    $b = $a + $b;
+}
 
-<form action="/curso-php/exercicio.php?dir=Testes&file=testeUpload" method="POST" enctype="multipart/form-data">
+soma();
+echo $b; */
 
-<input type="file" name="imagem" accept=".pdf">
-<input type="submit">
+$a = array(1,2,3,4,5,6);
+/* for ($i=0; $i <= count($a); $i++) { 
+    echo $a[$i];
+} */
 
-</form>
+foreach ($a as $rs) {
+    echo $rs ." ";
+}
+
+https://telegram.me/share/url?url=mini=true&url=http://gtidobrasil.com/scriptcase9/app/adeltec_vagas/blank_view_vaga_compartilhada/blank_view_vaga_compartilhada.php?cv=&text=confira
