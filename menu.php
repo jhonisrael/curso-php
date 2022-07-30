@@ -1,6 +1,6 @@
 <nav class="modulos">
-            <div class="modulo roxo-escuro">
-                <h3>7. select-crud </h3>
+            <div class="modulo azul-teste">
+                <h3>00. select-crud </h3>
                 <ul>
                     <li>
                         <a href="exercicio.php?dir=select_crud&file=login">
@@ -9,8 +9,8 @@
                     </li>
                 </ul>
             </div>
-            <div class="modulo roxo-escuro">
-                <h3>7. Upload</h3>
+            <div class="modulo azul-teste">
+                <h3>00. Upload</h3>
                 <ul>
                     <li>
                         <a href="exercicio.php?dir=uploads&file=contador">
@@ -39,8 +39,8 @@
                     </li>
                 </ul>
             </div>
-            <div class="modulo roxo-escuro">
-                <h3>7. Banco</h3>
+            <div class="modulo azul-teste">
+                <h3>00. Banco</h3>
                 <ul>
                     <li>
                         <a href="exercicio.php?dir=banco&file=conexao">
@@ -49,8 +49,8 @@
                     </li>
                 </ul>
             </div>
-            <div class="modulo roxo-escuro">
-                <h3>7. Testes</h3>
+            <div class="modulo azul-teste">
+                <h3>00. Testes</h3>
                 <ul>
                     <li>
                         <a href="exercicio.php?dir=Testes&file=teste">
@@ -79,7 +79,27 @@
                     </li>
                 </ul>
             </div>
-            <div class="modulo azul-escuro">
+            <div class="modulo laranja-escuro">
+                <h3>10. Name Space </h3>
+                <ul>
+                    <li>
+                        <a href="exercicio.php?dir=namespace&file=basico">
+                            Exemplo Básico
+                        </a>
+                    </li>
+                    <li>
+                        <a href="exercicio.php?dir=namespace&file=sub_namespace">
+                            Sub namespace
+                        </a>
+                    </li>
+                    <li>
+                        <a href="exercicio.php?dir=namespace&file=use_as">
+                            Use/As
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="modulo roxo-escuro">
                 <h3>9. Includes </h3>
                 <ul>
                     <li>
