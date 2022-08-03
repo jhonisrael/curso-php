@@ -1,3 +1,6 @@
+<?php
+error_reporting(0);
+?>
 <nav class="modulos">
             <div class="modulo azul-teste">
                 <h3>00. select-crud </h3>
@@ -75,6 +78,16 @@
                     <li>
                         <a href="exercicio.php?dir=Testes&file=votacao">
                             Votação
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="modulo vermelho">
+                <h3>12. Sessão </h3>
+                <ul>
+                    <li>
+                        <a href="exercicio.php?dir=sessao&file=basico_sessao">
+                            Sessão
                         </a>
                     </li>
                 </ul>
