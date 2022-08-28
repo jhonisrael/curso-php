@@ -1,4 +1,8 @@
 <?php
+session_start();
+if (!$_SESSION['usuario']) {
+    header('Location: login.php');
+}
 error_reporting(0);
 ?>
 <!DOCTYPE html>
@@ -16,6 +20,9 @@ error_reporting(0);
     <h1>PHP</h1>
     <H2>Exemplos</H2>
     </header>
+    <nav class= navegacao>
+
+    </nav>
     <main class="principal">
     <div class="conteudo">
         <?php  require_once('menu.php') ?>

@@ -1,4 +1,8 @@
 <?php
+session_start();
+if (!$_SESSION['usuario']) {
+    header('Location: login.php');
+}
 error_reporting(0);
 ?>
 <!DOCTYPE html>

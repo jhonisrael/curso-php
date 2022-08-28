@@ -4,7 +4,7 @@ print_r($_SESSION);
 ?>
 
 <?php
-$_SESSION['email'] = 'gabrielnovo@hotmail.com';
+$_SESSION['email'] = 'gabrielalterado@hotmail.com';
 ?>
 
 <p>
