@@ -1,5 +1,11 @@
 <?php
 session_start();
+
+if($_COOKIE['usuario']) {
+    $_SESSION['usuario'] = $_COOKIE['usuario'];
+}
+
+
 if (!$_SESSION['usuario']) {
     header('Location: login.php');
 }
@@ -22,8 +28,10 @@ error_reporting(0);
     <H2>visualizaçao do exercicio</H2>
     </header>
     <nav class= navegacao>
-        <a href=<?= "{$_GET['dir']}/{$_GET['file']}.php" ?> class="verde">sem formatação</a>    
-        <a href="index.php" class="vermelho">voltar</a>   
+    <span class="usuario">Usuário: <?= $_SESSION['usuario']?></span>
+    <a href=<?= "{$_GET['dir']}/{$_GET['file']}.php" ?> class="verde">sem formatação</a>    
+    <a href="index.php" >voltar</a>   
+    <a href="logout.php" class="vermelho">Sair</a>
     </nav>
     <main class="principal">
     <div class="conteudo">

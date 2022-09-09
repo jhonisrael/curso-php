@@ -26,6 +26,8 @@ if ($_POST['email']) {
         if($emailvalido && $senhavailda) {
             $_SESSION['erros'] = null;
             $_SESSION['usuario'] = $usuario['nome'];
+            $exp = time() + 60 * 60 * 24 * 30;
+            setcookie('usuario', $usuario['nome'], $exp);
             header('Location: index.php');
         }
     }
@@ -35,6 +37,7 @@ if ($_POST['email']) {
     }
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
