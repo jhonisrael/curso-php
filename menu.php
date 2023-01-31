@@ -80,6 +80,11 @@ error_reporting(0);
                             Votação
                         </a>
                     </li>
+                    <li>
+                        <a href="exercicio.php?dir=Testes&file=letraComSombraColorida">
+                            Letra CSS
+                        </a>
+                    </li>
                 </ul>
             </div>
             <div class="modulo vermelho">
