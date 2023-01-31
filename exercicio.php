@@ -28,7 +28,7 @@ error_reporting(0);
     <H2>visualizaçao do exercicio</H2>
     </header>
     <nav class= navegacao>
-    <span class="usuario">Usuário: <?= $_SESSION['usuario']?></span>
+    <span class="usuario"> <?= $_SESSION['usuario']?></span>
     <a href=<?= "{$_GET['dir']}/{$_GET['file']}.php" ?> class="verde">sem formatação</a>    
     <a href="index.php" >voltar</a>   
     <a href="logout.php" class="vermelho">Sair</a>
@@ -42,7 +42,7 @@ error_reporting(0);
     </div>
     </main>
     <footer class="rodape">
-      COD3R © <?= date("F j, Y"); ?>
+     Copyright © <?= date("F j, Y"); ?>
     </footer>
 </body>
 </html>

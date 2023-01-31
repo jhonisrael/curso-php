@@ -1,5 +1,5 @@
 <?php
-// error_reporting(0);
+error_reporting(0);
 session_start();
 
 $email = $_POST['email'];
@@ -16,6 +16,11 @@ if ($_POST['email']) {
             "nome" => "Outro Aluno",
             "email" => "outro@email.com.br",
             "senha" => "654321",
+        ],
+        [
+            "nome" => "Jhonata Farias",
+            "email" => "jhonata@email.com",
+            "senha" => "123456",
         ],
     ];
 
@@ -76,9 +81,16 @@ if ($_POST['email']) {
         <button>Entrar</button>
       </form>
     </div>
+    <p>
+            nome =>  Aluno Cod3r
+            <br>
+            email => aluno@cod3r.com.br
+            <br>
+            senha => 123456
+    </p>
     </main> 
     <footer class="rodape">
-     COD3R © <?= date("F j, Y"); ?>
+    Copyright © <?= date("F j, Y"); ?>
     </footer>
 </body>
 </html>

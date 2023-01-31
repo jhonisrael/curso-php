@@ -26,7 +26,7 @@ error_reporting(0);
     <H2>Exemplos</H2>
     </header>
     <nav class= navegacao>
-        <span class="usuario">Usuário: <?= $_SESSION['usuario']?></span>
+        <span class="usuario">E aí <?= $_SESSION['usuario']?>!</span>
         <a href="logout.php" class="vermelho">Sair</a>
     </nav>
     <main class="principal">
@@ -35,7 +35,7 @@ error_reporting(0);
     </div>
     </main> 
     <footer class="rodape">
-     COD3R © <?= date("F j, Y"); ?>
+    Copyright © <?= date("F j, Y"); ?>
     </footer>
 </body>
 </html>
