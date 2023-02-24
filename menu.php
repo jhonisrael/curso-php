@@ -81,8 +81,8 @@ error_reporting(0);
                         </a>
                     </li>
                     <li>
-                        <a href="exercicio.php?dir=Testes&file=letraComSombraColorida">
-                            Letra CSS
+                        <a href="exercicio.php?dir=Testes&file=dropbox">
+                            Dropbox exemple
                         </a>
                     </li>
                 </ul>
