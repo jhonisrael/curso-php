@@ -22,8 +22,8 @@ error_reporting(0);
 </head>
 <body>
     <header class="cabeçalho">
-    <h1>PHP</h1>
-    <H2>Exemplos</H2>
+    <h1>HOME</h1>
+    <H2>Exemples</H2>
     </header>
     <nav class= navegacao>
         <span class="usuario">E aí <?= $_SESSION['usuario']?>!</span>
