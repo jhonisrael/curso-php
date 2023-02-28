@@ -3,6 +3,21 @@ error_reporting(0);
 ?>
 <nav class="modulos">
             <div class="modulo azul-teste">
+                <h3>000. Templates</h3>
+                <ul>
+                    <li>
+                        <a href="exercicio.php?dir=templates&file=portifolio1">
+                            Template Básico em cinza
+                        </a>
+                    </li>
+                    <li>
+                        <a href="exercicio.php?dir=templates&file=portifolio2">
+                            Template Básico com Menu Lateral
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="modulo azul-teste">
                 <h3>00. select-crud </h3>
                 <ul>
                     <li>
