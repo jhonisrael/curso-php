@@ -15,6 +15,11 @@ error_reporting(0);
                             Template Básico com Menu Lateral
                         </a>
                     </li>
+                    <li>
+                        <a href="exercicio.php?dir=templates&file=tema_3">
+                            Tema 3 menu lateral
+                        </a>
+                    </li>
                 </ul>
             </div>
             <div class="modulo azul-teste">
